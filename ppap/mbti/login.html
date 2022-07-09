@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lnag="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title> 회원가입</title>
+        <link rel="stylesheet" href="css/login.css">
+        
+    </head>
+    <body  onload="doPopupopen();">
+        <!-- header -->
+        <div id="header">
+           <h1> 회원가입 </h1>
+        </div>
+
+
+        <!-- wrapper -->
+        <form action = "*" accept-charset ="utf-8" method="post">
+        <div id="wrapper">
+
+            <!-- content-->
+            <div id="content">
+
+                <!-- NAME -->
+                <div>
+                    <h3 class="join_title"><label for="name">닉네임</label></h3>
+                    <span class="box int_name">
+                        <input type="text" id="name" class="int" maxlength="20" name="nickname">
+                    </span>
+                    <span class="error_next_box"></span>
+                </div>
+                
+                       <!-- MBTI -->
+                <div>
+                    <h3 class="join_title"><label for="name">MBTI</label></h3>
+                    <span class="box int_mbti">
+                        <input type="text" id="mbti" class="int" maxlength="20" name="mbti">
+                    </span>
+                    <span class="error_next_box"></span>
+                </div>
+
+
+                <!-- BIRTH -->
+                <div>
+                    <h3 class="join_title"><label for="age">나이</label></h3>
+
+                    <div id="bir_wrap">
+                        <!-- BIRTH_YY -->
+                        <div id="age">
+                            <span class="box">
+                                <input type="text" id="age" class="int" maxlength="4" placeholder="ex) 20" name="birth">
+                            </span>
+                        </div>
+
+                    </div>
+                    <span class="error_next_box"></span>    
+                </div>
+                
+                  <div>
+                    <h3 class="join_title"><label for="age">주 활동지역</label></h3>
+
+                    <div id="bir_wrap">
+                        <!-- BIRTH_YY -->
+                        <div id="area">
+                            <span class="box">
+                                <input type="text" id="area" class="int" maxlength="10" placeholder="ex) 매칭되고 싶은 지역을 입력하세요 (선택)" name="area">
+                            </span>
+                        </div>
+
+                <!-- GENDER -->
+                <div>
+                    <h3 class="join_title"><label for="gender">성별</label></h3>
+                    <span class="box gender_code">
+                        <select id="gender" class="sel">
+                            <option>성별</option>
+                            <option value="M">남자</option>
+                            <option value="F">여자</option>
+                        </select>                            
+                    </span>
+                    <span class="error_next_box">필수 정보입니다.</span>
+                </div>
+
+                   <!-- 오프라인 -->
+                <!-- <div>
+                    <h3 class="join_title"><label for="meeting">만남</label></h3>
+                    <span class="box meeting_code">
+                        <select id="gender" class="sel">
+                            <option>온라인 / 오프라인</option>
+                            <option value="On">온라인</option>
+                            <option value="Off">오프라인</option>
+                        </select>                            
+                    </span>
+                    <span class="error_next_box">필수 정보입니다.</span>
+                </div> --> 
+                
+                       <!-- 오프라인 -->
+                <div>
+               <!--     <h3 class="join_title"><label for="geo">선호 지역</label></h3>
+                    <span class="box int_geo">
+                        <input type="text" id="geo" class="int" maxlength="20" placeholder="ex) 홍대">
+                    </span>
+                    <span class="error_next_box"></span>
+                                                
+                
+                </div> -->
+
+
+                <!-- JOIN BTN-->
+                <div class="btn_area">
+                    <button type = "submit " id="btnJoin" onclick="location.href='main.html'" >
+                        <span>가입하기</span>
+                    </button>
+                </div>
+
+                
+
+            </div> 
+            <!-- content-->
+
+        </div> 
+           
+        <!-- wrapper -->
+        </div>
+        </form>
+    </body>
+</html>
