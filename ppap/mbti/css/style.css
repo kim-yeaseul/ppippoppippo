@@ -51,7 +51,7 @@
 /* 채팅 메뉴 조절 */
   .utility-list {
     float: left;
-    padding-top: 35px;
+    padding-top: 15px;
       padding-left: 10px;
   }
   .utility-list li {
@@ -115,9 +115,6 @@ padding-top: 100px;
 }
 
 
-#mimoj { 
-}
-
 h1 { line-height: 70px;}
 
 .box gender_code { 
@@ -128,3 +125,7 @@ select {
 
 
   
+#mainlogo { 
+  width: 230px; 
+  height: 80px;
+}
