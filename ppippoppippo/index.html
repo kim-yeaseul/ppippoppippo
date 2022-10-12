@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ppippo_main</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark text-light px-0 py-2">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                 
+                    <a href="team.html"> <span style="color: white;">github</span></a>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                   <a href="team.html">
+                    <span style="color: white;">contact</span></a>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">PPIPPO</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                   <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">about</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="service.html" class="dropdown-item">서비스 소개</a>
+                         <a href="category.html" class="dropdown-item">카테고리 소개</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                          <a href="support.html" class="dropdown-item">Support</a>
+                      
+    
+                    </div>
+                </div>
+                <a href="general.html" class="nav-item nav-link">일반 병원</a>
+                <a href="emergency.html" class="nav-item nav-link">응급실</a>
+                <a href="non_benefit.html" class="nav-item nav-link">비급여</a>
+                <a href="medical.html" class="nav-item nav-link">의료 실태 시각화</a>
+            </div>
+            <a href="category.html" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">찾아 보기<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.svg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown">나에게 필요한<br/> 병원을 찾아보세요</h1>
+                                    <a href="category.html" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.svg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7">
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown">현 의료 실태를 <br/>시각화로 한눈에 </h1>
+                                    <a href="" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Top Feature Start -->
+    <div class="container-fluid top-feature py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-times text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>회원 가입, 비용 </h4>
+                                <span>저희 서비스는 별도의 가입과 비용 없이 <br/>누구나 이용 가능합니다.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-users text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>데이터 업데이트 </h4>
+                                <span>공공데이터를 기반으로<br/> 6개월마다 업데이트 됩니다.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
+                                <i class="fa fa-phone text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h4>건의 사항</h4>
+                                <span>불편한 점은 팀원에게 문의해주세요!
+<br/> 다음 업데이트시 적극 반영하겠습니다. </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Feature End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/about.svg">
+                </div>
+                <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
+                    <h1 class="display-1 text-primary mb-0">PPIPPO <br>PPIPPO</h1>
+                    <br>
+                    <h1 class="display-5 mb-4">사용자 맞춤형 의료/보건 <br>시설 시각화 서비스</h1>
+                    <p class="mb-4"> 일반 병원, 응급실 등의 병원의 상세정보를 알아보세요.<br>
+의료진 수, 우수의료기관 여부, 진료 과목, 병상 개수, 위치를 확인할 수 있습니다. 
+<br> 병원 / 진료과목별 비급여 비용 비교 서비스를 제공하며, 
+<br> 현 대한민국의 의료 실태를 한 눈에 파악할 수 있습니다. 
+
+</p>
+                    <a class="btn btn-primary py-3 px-4" href="service.html">Explore More</a>
+                </div>
+                <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-5">
+                        <div class="col-12 col-sm-6 col-lg-12">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-award fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">Award Winning</h4>
+                                <span> elasticsearch kor X 상명대학교 <br>데이터 콘서트 TOP4 수상 </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-12">
+                            <div class="border-start ps-4">
+                                <i class="fa fa-users fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">Dedicated Team</h4>
+                                <span> 엘라스틱 서치, 키바나 시각화등의<br> 개발이 가능한 팀원들! </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+   
+
+   
+
+
+    <!-- category Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Our Services</p>
+                <h1 class="display-5 mb-5">당신을 위한 <br>맞춤형 병원 정보</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/carousel-1.svg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/general.svg" alt="Icon">
+                            </div>
+                            <h4 class="mb-3">일반 병원</h4>
+                            <p class="mb-4">지역별 병원의 진료 과목, 우수기관 등급 등의 상세정보를 확인할 수 있어요.</p>
+                            <a class="btn btn-sm" href="general.html"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/service2.svg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/emergency.svg" alt="Icon">
+                            </div>
+                            <h4 class="mb-3">응급실</h4>
+                            <p class="mb-4">특정 응급의료기관/외상센터의 수술, <br>진료과목, 상세정보를 확인할 수 있어요.</p>
+                            <a class="btn btn-sm" href="emergency.html"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                      <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/carousel-2.svg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/non.svg" alt="Icon">
+                            </div>
+                            <h4 class="mb-3">비급여</h4>
+                            <p class="mb-4">비급여 항목, 병원 별 비급여 항목의 가격 등을 확인할 수 있어요.</p>
+                            <a class="btn btn-sm" href="non_benefit.html"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/carousel-2.svg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/medical.svg" alt="Icon">
+                            </div>
+                            <h4 class="mb-3">의료 실태 시각화 </h4>
+                            <p class="mb-4">대한민국의 의료 실태를 파악할 수 있는 시각화를 한눈에 파악할 수 있어요.</p>
+                            <a class="btn btn-sm" href="me"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/service3.svg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/pill.svg" alt="Icon">
+                            </div>
+                            <h4 class="mb-3">약국 비용 계산기</h4>
+                            <p class="mb-4">건강보험심사평가원에서 제공하는 서비스를 통해 약국 비용을 확인해보세요.</p>
+                            <a class="btn btn-sm" href="https://www.hira.or.kr/rb/calc/form.do?pgmid=HIRAA030037000000&WT.gnb=약국비용+계산기"><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded d-flex h-100">
+                        <div class="service-img rounded">
+                            <img class="img-fluid" src="img/newspaper.svg" alt="">
+                        </div>
+                        <div class="service-text rounded p-5">
+                            <div class="btn-square rounded-circle mx-auto mb-3">
+                                <img class="img-fluid" src="img/news-re.svg" alt="Icon">
+                            </div>
+                            <h4 class="mb-3">공공 데이터 출처</h4>
+                            <p class="mb-4">건강보험심사평가원과 국립중앙의료원의 공공데이터를 사용하였습니다.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- category End -->
+
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-bold text-primary">Our Team</p>
+                <h1 class="display-5 mb-5">개발 팀원</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid" src="img/pro1.svg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">김예슬</h4>
+                            <h6> 소프트웨어학과</h6>
+                            <p class="text-primary">Font-end developer<br>UI/UX,&nbsp;키바나 시각화<br>
+                            <span style = "color: black">yes_ _lee@naver.com</span>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle me-2" href="https://github.com/kim-yeaseul"><img src = "img/icon.svg"></a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid" src="img/pro2.svg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">황명연, 김윤진 </h4>
+                            <h6> 컴퓨터과학과</h6>
+                            <p class="text-primary">Back-end developer <br> 데이터 수집,&nbsp;ES index<br>
+                             <span style = "color: black">auddus0105@gmail.com 황명연</span>
+                               <span style = "color: black">201810917@sangmyung.kr 김윤진 </span>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle me-2" href="https://github.com/auddus16"><img src = "img/icon.svg"></a><br> <a class="btn btn-square rounded-circle me-2" href="https://github.com/yunjin99"><img src = "img/icon.svg"> </a>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded">
+                        <img class="img-fluid" src="img/pro3.svg" alt="">
+                        <div class="team-text">
+                            <h4 class="mb-0">이정명</h4>
+                            <h6> 경영학부</h6>
+                            <p class="text-primary">ppt,&nbsp; 키바나 시각화<br>
+                             <span style = "color: black">takeit_slow@naver.com</span>
+                            <div class="team-social d-flex">
+                                <a class="btn btn-square rounded-circle me-2" href=""><img src = "img/icon.svg"></a>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-bold text-primary">데이터 콘서트 TOP4 수상</p>
+                    <h1 class="display-5 mb-5">프로젝트 대회 수상 <br>관련 기사</h1>
+                    <p class="mb-4">이 서비스는 상명대-Elastic, 데이터콘서트 경진대회에서<br> 17개 팀 중 top8을 거쳐 top4팀에 선정되었습니다. <br> 대회의 성과와 관련된 여러 기사를 읽어보세요.
+</p>
+                    <a class="btn btn-primary py-3 px-4" href="https://www.smu.ac.kr/newspaper/press.do?mode=view&articleNo=730224#/list">See More</a>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div>
+                            <div class="testimonial-item">
+                            <a href = "https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=상명대+데이터+콘서트&oquery=구글&tqi=h0RCrsp0JXVssRnrEqCssssstV4-093035">
+                            <img src="img/news.jpg" style= "height: 500px; width: 550px;">  </a>
+                           
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                           <a href="https://www.smu.ac.kr/webzine/today.do?mode=view&articleNo=729620&article.offset=0&articleLimit=10&srSearchVal=%EB%8D%B0%EC%9D%B4%ED%84%B0">
+                     <img src="img/data.svg" style= "height: 500px; width: 550px;"></a>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+     
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Categories</h4>
+                    <a class="btn btn-link" href="general.html">일반 병원</a>
+                    <a class="btn btn-link" href="emergency.html">응급실</a>
+                    <a class="btn btn-link" href="non_benefit.html">비급여</a>
+                    <a class="btn btn-link" href="medical.html">의료 실태 시각화</a>
+                
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-4">Services</h4>
+                    <a class="btn btn-link" href="service.html">서비스 소개</a>
+                    <a class="btn btn-link" href="category.html">카테고리 소개</a>
+                    <a class="btn btn-link" href="team.html">Our Team</a>
+                    <a class="btn btn-link" href="support.html">Support</a>
+                </div>
+             
+            
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">ppippo ppippo</a>, All Right Reserved.
+                </div>
+                     <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                     Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a>
+                </div>
+          
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+  
+</body>
+
+</html>
